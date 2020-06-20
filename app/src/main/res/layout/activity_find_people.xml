@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindPeopleActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/find_people_layout_bar_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/contact_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                >
+                <EditText
+                    android:id="@+id/search_contacts"
+                    android:hint="Search Contacts"
+                    android:textAlignment="center"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/search"
+
+                    ></EditText>
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_below="@+id/find_people_layout_bar_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
